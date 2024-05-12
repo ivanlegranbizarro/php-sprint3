@@ -29,12 +29,6 @@ class Turkey
   }
 }
 
-function duck_interaction($duck)
-{
-  $duck->quack();
-  $duck->fly();
-}
-
 class TurkeyAdapter extends Duck
 {
 
