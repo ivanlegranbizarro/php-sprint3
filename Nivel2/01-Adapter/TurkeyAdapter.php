@@ -36,6 +36,10 @@ class TurkeyAdapter extends Duck
   {
   }
 
+  public function quack()
+  {
+    $this->turkey->gobble();
+  }
 
   public function fly()
   {
@@ -51,12 +55,15 @@ $pavoPrimigenio = new Turkey;
 
 
 echo $pavoPrimigenio->fly();
+echo '<br>';
+echo $pavoPrimigenio->gobble();
 
 echo '<br>';
 
 $pavoReformado = new TurkeyAdapter($pavoPrimigenio);
 
 echo $pavoReformado->quack();
+
 
 echo '<br>';
 
